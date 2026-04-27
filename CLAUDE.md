@@ -17,13 +17,18 @@ Each game is a single self-contained HTML file with inline CSS and JS. No depend
 
 ## Git workflow
 
-After every meaningful change: commit with a clean descriptive message and push to `origin main`. Keep unrelated changes in separate commits so individual features can be reverted cleanly.
+**Claude Code must commit and push after every meaningful unit of work** — feature additions, bug fixes, and significant edits each get their own commit. Never leave completed work uncommitted. This ensures the project history is always traceable and any change can be reverted cleanly.
 
 ```bash
 git add <file>
-git commit -m "description"
+git commit -m "short imperative summary of what and why"
 git push
 ```
+
+Rules:
+- One logical change per commit — do not batch unrelated edits
+- Commit message focuses on the *why*, not just the *what*
+- Always push immediately after committing so GitHub is never behind local
 
 ## Bee Shooter architecture (`shooter.html`)
 
